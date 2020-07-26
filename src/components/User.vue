@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="user__page">
-      <h1>User info</h1>
-      <p>Name: {{ users.name }}</p>
-      <p>Username: {{users.username}}</p>
-      <p>Email: {{users.email}}</p>
-      <p>Phone {{users.phone}}</p>
+      <h3 class="user__username">{{users.username}}</h3>
+      <img src="../images/user_avatar.png" alt="user avatar" class="user__avatar" />
+      <h4 class="user__name">{{ users.name }}</h4>
+      <p>{{users.email}}</p>
+      <p>{{users.phone}}</p>
     </div>
   </div>
 
@@ -29,3 +29,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+  .user__avatar {
+    width: 100px;
+    height: 100px;
+
+    cursor: pointer;
+  }
+
+  .user__username {
+    font-weight: 700;
+  }
+</style>

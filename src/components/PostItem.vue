@@ -5,6 +5,7 @@
       <p class="post__body">{{ post.body }}</p>
     </div>
     <hr />
+    <h3 class="comments__title">Comments</h3>
         <Comments 
           v-bind:comments="comments"
         />
@@ -41,5 +42,15 @@ export default {
 <style scoped>
   .post__item {
     padding: 0 20px 20px;
+  }
+  .comments__title {
+    width: 250px;
+
+    margin: 0 auto;
+
+    background-color: rgb(54, 54, 54);
+    color: #fff;
+  
+    border-radius: 15px;
   }
 </style>
